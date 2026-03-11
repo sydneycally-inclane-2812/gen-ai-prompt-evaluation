@@ -1,0 +1,280 @@
+LIMIT_BAL,SUBURB,SEX,EDUCATION,MARRIAGE,AGE,PAYMENT_BALANCE_1,PAYMENT_BALANCE_2,PAYMENT_BALANCE_3,PAYMENT_BALANCE_4,PAYMENT_BALANCE_5,PAYMENT_BALANCE_6,DEFAULT
+220000,Berala,male,graduate,1,38,198067,201346,197533,198437,197347,198792,0
+150000,Homebush West,female,university,0,24,109890,110642,110345,110109,110542,110398,1
+50000,Liberty Grove,male,high school,1,40,47651,47719,47751,47719,47751,47719,0
+200000,Flemington,female,graduate,0,29,0,0,0,0,0,0,1
+30000,Potts Hill,male,university,0,25,20416,20416,20416,20416,20416,20416,1
+50000,Newington,female,high school,1,41,143067,143067,143067,143067,143067,143067,0
+400000,Chullora,male,graduate,0,32,0,0,0,0,0,0,1
+120000,Strathfield South,female,university,1,26,118720,118720,118720,118720,118720,118720,0
+50000,Granville,male,university,0,24,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,1,43,0,0,0,0,0,0,0
+30000,Berala,male,high school,0,22,11086,11086,11086,11086,11086,11086,1
+50000,Sefton,female,university,1,39,0,0,0,0,0,0,1
+150000,Liberty Grove,female,university,0,30,0,0,0,0,0,0,1
+200000,Strathfield,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Potts Hill,female,high school,1,46,0,0,0,0,0,0,0
+400000,Newington,male,graduate,1,41,0,0,0,0,0,0,0
+50000,Homebush West,male,university,0,27,0,0,0,0,0,0,1
+200000,Berala,female,graduate,0,33,0,0,0,0,0,0,1
+30000,Strathfield South,male,high school,1,44,0,0,0,0,0,0,0
+50000,Chullora,female,university,1,40,0,0,0,0,0,0,0
+150000,Flemington,male,graduate,0,29,0,0,0,0,0,0,1
+200000,Homebush,female,university,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,male,high school,0,23,0,0,0,0,0,0,1
+50000,Sefton,female,graduate,0,25,0,0,0,0,0,0,1
+200000,Strathfield South,female,university,0,31,0,0,0,0,0,0,1
+30000,Berala,male,university,1,42,0,0,0,0,0,0,0
+50000,Homebush West,female,university,0,28,0,0,0,0,0,0,1
+200000,Chullora,male,graduate,1,39,0,0,0,0,0,0,0
+30000,Potts Hill,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,male,graduate,0,34,0,0,0,0,0,0,1
+50000,Liberty Grove,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,female,graduate,0,30,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,43,0,0,0,0,0,0,0
+50000,Berala,female,university,0,26,0,0,0,0,0,0,1
+200000,Strathfield South,male,graduate,1,38,0,0,0,0,0,0,0
+30000,Chullora,female,high school,1,47,0,0,0,0,0,0,0
+400000,Homebush West,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,40,0,0,0,0,0,0,0
+200000,Liberty Grove,female,graduate,0,32,0,0,0,0,0,0,1
+30000,Berala,male,high school,1,49,0,0,0,0,0,0,0
+50000,Sefton,female,university,0,27,0,0,0,0,0,0,1
+200000,Strathfield,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Homebush West,male,university,0,24,0,0,0,0,0,0,1
+50000,Chullora,female,high school,1,42,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+200000,Potts Hill,female,university,1,39,0,0,0,0,0,0,0
+30000,Liberty Grove,male,high school,1,46,0,0,0,0,0,0,0
+50000,Strathfield South,female,university,0,25,0,0,0,0,0,0,1
+200000,Homebush,male,graduate,0,31,0,0,0,0,0,0,1
+30000,Sefton,female,high school,1,44,0,0,0,0,0,0,0
+400000,Chullora,male,graduate,1,37,0,0,0,0,0,0,0
+50000,Berala,female,university,1,40,0,0,0,0,0,0,0
+200000,Liberty Grove,female,graduate,0,34,0,0,0,0,0,0,1
+30000,Potts Hill,male,high school,1,48,0,0,0,0,0,0,0
+50000,Homebush West,female,university,0,29,0,0,0,0,0,0,1
+200000,Strathfield South,male,graduate,1,35,0,0,0,0,0,0,0
+30000,Chullora,female,high school,1,49,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,36,0,0,0,0,0,0,1
+50000,Liberty Grove,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,female,graduate,0,33,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,45,0,0,0,0,0,0,0
+50000,Potts Hill,female,university,0,26,0,0,0,0,0,0,1
+200000,Strathfield,female,graduate,1,37,0,0,0,0,0,0,0
+30000,Berala,male,university,0,24,0,0,0,0,0,0,1
+50000,Homebush West,female,university,1,42,0,0,0,0,0,0,0
+200000,Chullora,male,graduate,0,32,0,0,0,0,0,0,1
+30000,Liberty Grove,female,high school,1,46,0,0,0,0,0,0,0
+400000,Strathfield South,male,graduate,1,38,0,0,0,0,0,0,0
+50000,Sefton,female,university,1,40,0,0,0,0,0,0,0
+200000,Homebush,female,graduate,0,34,0,0,0,0,0,0,1
+30000,Potts Hill,male,high school,1,47,0,0,0,0,0,0,0
+50000,Berala,female,university,0,27,0,0,0,0,0,0,1
+200000,Liberty Grove,male,graduate,1,39,0,0,0,0,0,0,0
+30000,Chullora,female,high school,1,48,0,0,0,0,0,0,0
+400000,Homebush West,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Strathfield South,female,university,1,41,0,0,0,0,0,0,0
+200000,Berala,female,graduate,0,36,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,49,0,0,0,0,0,0,0
+50000,Potts Hill,female,university,1,42,0,0,0,0,0,0,0
+200000,Chullora,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,33,0,0,0,0,0,0,1
+50000,Homebush West,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Sefton,female,high school,1,46,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Chullora,female,university,0,27,0,0,0,0,0,0,1
+200000,Homebush,male,graduate,0,34,0,0,0,0,0,0,1
+30000,Liberty Grove,male,high school,1,47,0,0,0,0,0,0,0
+50000,Strathfield South,female,university,1,40,0,0,0,0,0,0,0
+200000,Berala,male,graduate,1,36,0,0,0,0,0,0,0
+30000,Potts Hill,female,high school,1,48,0,0,0,0,0,0,0
+400000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+50000,Sefton,male,university,0,25,0,0,0,0,0,0,1
+200000,Chullora,female,graduate,1,37,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,49,0,0,0,0,0,0,0
+400000,Liberty Grove,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Strathfield South,female,university,0,26,0,0,0,0,0,0,1
+200000,Potts Hill,male,graduate,1,38,0,0,0,0,0,0,0
+30000,Homebush West,female,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,female,graduate,1,39,0,0,0,0,0,0,0
+50000,Chullora,male,university,1,41,0,0,0,0,0,0,0
+200000,Sefton,female,graduate,0,34,0,0,0,0,0,0,1
+30000,Liberty Grove,male,high school,1,47,0,0,0,0,0,0,0
+50000,Strathfield,female,university,1,40,0,0,0,0,0,0,0
+200000,Potts Hill,male,graduate,0,35,0,0,0,0,0,0,1
+30000,Berala,female,high school,1,48,0,0,0,0,0,0,0
+400000,Homebush West,male,graduate,1,36,0,0,0,0,0,0,0
+50000,Chullora,female,university,0,27,0,0,0,0,0,0,1
+200000,Strathfield South,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Sefton,female,high school,1,45,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,38,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,46,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,25,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Berala,male,high school,1,48,0,0,0,0,0,0,0
+400000,Chullora,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Sefton,female,university,1,41,0,0,0,0,0,0,0
+200000,Liberty Grove,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Potts Hill,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+50000,Berala,male,university,0,26,0,0,0,0,0,0,1
+200000,Homebush,male,graduate,0,34,0,0,0,0,0,0,1
+30000,Chullora,female,high school,1,46,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Sefton,female,university,0,27,0,0,0,0,0,0,1
+200000,Strathfield South,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Homebush,male,university,0,25,0,0,0,0,0,0,1
+400000,Berala,male,graduate,0,32,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,40,0,0,0,0,0,0,0
+200000,Chullora,male,graduate,1,38,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,46,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,39,0,0,0,0,0,0,0
+50000,Berala,male,university,0,27,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,48,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+50000,Berala,male,university,0,26,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,48,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+50000,Berala,male,university,0,26,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,48,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+50000,Berala,male,university,0,26,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,48,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+50000,Berala,male,university,0,26,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,48,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+50000,Berala,male,university,0,26,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,48,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+50000,Berala,male,university,0,26,0,0,0,0,0,0,1
+200000,Homebush West,female,graduate,0,35,0,0,0,0,0,0,1
+30000,Sefton,male,high school,1,47,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,33,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty Grove,female,high school,1,45,0,0,0,0,0,0,0
+400000,Strathfield,female,graduate,0,34,0,0,0,0,0,0,1
+50000,Chullora,male,university,0,26,0,0,0,0,0,0,1
+200000,Berala,female,graduate,1,36,0,0,0,0,0,0,0
+30000,Sefton,male,high school,1,48,0,0,0,0,0,0,0
+400000,Potts Hill,male,graduate,1,39,0,0,0,0,0,0,0
+50000,Homebush West,female,university,1,40,0,0,0,0,0,0,0
+200000,Strathfield South,female,graduate,1,38,0,0,0,0,0,0,0
+30000,Berala,male,high school,1,46,0,0,0,0,0,0,0
+400000,Berala,male,graduate,0,35,0,0,0,0,0,0,1
+50000,Potts Hill,female,university,1,41,0,0,0,0,0,0,0
+200000,Homebush,male,graduate,1,37,0,0,0,0,0,0,0
+30000,Liberty
