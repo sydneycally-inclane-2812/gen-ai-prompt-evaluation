@@ -18,8 +18,8 @@ def generate_synthetic_data_from_csv(df, num_points, user_prompt_template):
     )
     # Convert the dataframe to CSV string (without index)
     data_csv = df.to_csv(index=False)
-    # Fill the user prompt template
-    user_prompt = user_prompt_template.format(num_points=num_points, data_csv=data_csv)
+    # Fill the user prompt template (no formatting)
+    user_prompt = user_prompt_template
     try:
         synthetic_text = generate_data(system_prompt, user_prompt)
     except Exception as e:
@@ -44,24 +44,85 @@ def generate_data(system_prompt, prompt, model="llama-3.3-70b-versatile", temper
     )
     return response.choices[0].message.content
 
-def parse_csv_from_llm_text(text):
-    """Parse CSV from an LLM response, preferring fenced csv blocks."""
+def column_value_distributions(df):
+    """
+    Return the value distribution (normalized) for each column in the dataframe.
+    For numeric columns, returns value counts of binned values (10 bins).
+    For categorical/low-cardinality columns, returns value counts directly.
+    Returns a dictionary: {column: value_counts}
+    """
+    distributions = {}
+    for col in df.columns:
+        if pd.api.types.is_numeric_dtype(df[col]):
+            # Bin numeric columns for easier viewing
+            binned = pd.cut(df[col], bins=10) if df[col].nunique() > 10 else df[col]
+            dist = binned.value_counts(normalize=True, dropna=False).sort_index()
+        else:
+            dist = df[col].value_counts(normalize=True, dropna=False)
+        distributions[col] = dist
+    return distributions
+
+# Example usage:
+# dists = column_value_distributions(df)
+# for col, dist in dists.items():
+#     print(f"Distribution for {col}:")
+#     print(dist)
+
+def split_by_binary_column(df, column):
+    """
+    Split a DataFrame into two DataFrames based on a binary column value (0/1).
+    Returns (df_0, df_1) where df_0 contains rows with column==0 and df_1 with column==1.
+    """
+    df_0 = df[df[column] == 0].copy()
+    df_1 = df[df[column] == 1].copy()
+    return df_0, df_1
+
+# Example usage:
+# df_0, df_1 = split_by_binary_column(imbalanced_df, 'DEFAULT')
+
+def parse_csv_from_llm_text(text, source_df):
+    """Parse CSV from an LLM response, using source_df columns to find the correct header line and parse the CSV block from there."""
     import re
     from io import StringIO
+    # Build the expected header string from source_df columns, with quotes
+    expected_header = ",".join([f'"{col}"' for col in source_df.columns])
     # Try to extract a ```csv ... ``` block
     block_matches = re.findall(r"```(?:csv)?\s*\n?(.*?)```", text.strip(), flags=re.IGNORECASE | re.DOTALL)
     for block in block_matches:
         candidate = block.strip()
         lines = [line.strip() for line in candidate.splitlines() if line.strip()]
-        if len(lines) >= 2 and "," in lines[0]:
-            csv_text = "\n".join(lines)
-            return pd.read_csv(StringIO(csv_text))
-    # Fallback: try to parse the whole text
+        # Find the line that matches the expected header (quoted)
+        for i, line in enumerate(lines):
+            if line.replace(' ', '') == expected_header.replace(' ', ''):
+                # Found the header, take all lines from here
+                csv_text = "\n".join(lines[i:])
+                try:
+                    return pd.read_csv(StringIO(csv_text))
+                except Exception:
+                    continue
+        # If not found, fallback to first line with comma
+        for i, line in enumerate(lines):
+            if "," in line:
+                csv_text = "\n".join(lines[i:])
+                try:
+                    return pd.read_csv(StringIO(csv_text))
+                except Exception:
+                    continue
+    # Fallback: try to parse the whole text, searching for the header
+    all_lines = [line.strip() for line in text.strip().splitlines() if line.strip()]
+    for i, line in enumerate(all_lines):
+        if line.replace(' ', '') == expected_header.replace(' ', ''):
+            csv_text = "\n".join(all_lines[i:])
+            try:
+                return pd.read_csv(StringIO(csv_text))
+            except Exception:
+                continue
+    # Last fallback: try to parse the whole text as CSV
     return pd.read_csv(StringIO(text.strip()))
 
 def align_generated_csv_to_source(response_text, source_df):
     """Parse generated CSV, align schema to source_df, and return only the generated DataFrame."""
-    generated_df = parse_csv_from_llm_text(response_text).copy()
+    generated_df = parse_csv_from_llm_text(response_text, source_df).copy()
     missing_columns = [col for col in source_df.columns if col not in generated_df.columns]
     extra_columns = [col for col in generated_df.columns if col not in source_df.columns]
     if missing_columns or extra_columns:
@@ -106,8 +167,24 @@ if uploaded_file is not None:
         show_prompt_input = True
         # Use the actual number of points and show a sample of the uploaded data
         sample_csv = df.head(min(5, len(df))).to_csv(index=False)
+        imbalanced_df_only, normal_df_only = split_by_binary_column(df, default_target)
+        imbalanced_df_only_dists = column_value_distributions(imbalanced_df_only)
+        normal_df_only_dists = column_value_distributions(normal_df_only)
         default_user_prompt = (
-            f"Given this dataset, generate exactly {num_points} additional data points in CSV format, target variable is {target_col}. Maintain syntactic compatibility.\n\n{sample_csv}"
+            f"""
+            Given this dataset, generate exactly 10 additional data points in CSV format, 
+            target variable is {default_target}. Maintain syntactic compatibility. Dataframe example:
+            
+            \n\n{df[:10]}
+
+            \n\n Value distributions for {default_target}=1 (imbalanced class):\n
+            {imbalanced_df_only_dists}
+            \n\n Value distributions for {default_target}=0 (normal class):\n
+            {normal_df_only_dists}
+
+            \n\nAvoid making data that are too similar to existing rows and avoid making normal class data
+            \n\nRemember to only generate data points for the underrepresented class ({default_target}=1) and maintain the same columns and data types as the original dataset.
+            """
         )
         st.session_state["user_prompt_template"] = default_user_prompt
 
@@ -119,7 +196,7 @@ if uploaded_file is not None:
         user_prompt_template = st.text_area(
             "User Prompt Template (use {num_points} and {data_csv})",
             value=user_prompt_template,
-            height=120,
+            height=320,
             key="user_prompt_template_area"
         )
 
