@@ -1,0 +1,10 @@
+numpy
+pandas
+streamlit
+groq
+matplotlib
+seaborn
+python-dotenv
+scikit-learn
+# Streamlit app requirements
+
